@@ -1,0 +1,9 @@
+version: '3'
+services: 
+    darknet:
+        build: ./darknet
+        image: ubuntu_darknet
+        container_name: ubuntu_darknet
+        restart: always
+        volumes:
+            - ./darknet/ws:/home/ws
