@@ -5,7 +5,12 @@ docker-compose run darknet bash
 ```
 
 # YOLOv3-tiny 学習
+```
+cd /darknet/ws
+mkdir backup
 
+/darknet/darknet detector train ./data/obj.data ./yolov3-tiny.cfg ./yolov3-tiny.conv.11
+```
 
 
 # [補足] yolov3.cfgの変更箇所
