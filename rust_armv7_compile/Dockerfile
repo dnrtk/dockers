@@ -9,6 +9,7 @@ RUN \
 
 RUN apt-get install -y gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf cmake
 RUN apt-get install -y libfreetype6-dev:armhf libfontconfig1-dev:armhf
+RUN apt-get install -y libssl-dev:armhf
 
 ENV CC=arm-linux-gnueabihf-gcc
 ENV CXX=arm-linux-gnueabihf-g++
